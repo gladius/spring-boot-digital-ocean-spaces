@@ -1,12 +1,15 @@
-package io.thepro.digitalocean.sapces.doobjectstorage;
+package io.thepro.dospaces;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DoObjectStorageApplication {
+public class DoSpacesApplication {
+	
+
 
 	public static void main(String[] args) {
-		SpringApplication.run(DoObjectStorageApplication.class, args);
+		SpringApplication.run(DoSpacesApplication.class, args);
 	}
+	
 }
