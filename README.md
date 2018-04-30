@@ -1,2 +1,2 @@
-## Spring Boot Digital Ocean Spaces Sample
+## Spring Boot Digital Ocean Object Storage Sample
 
