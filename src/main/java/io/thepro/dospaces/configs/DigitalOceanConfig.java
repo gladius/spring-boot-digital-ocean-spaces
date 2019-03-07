@@ -28,7 +28,8 @@ public class DigitalOceanConfig {
 	@Bean
 	public AmazonS3 getCredentials() {
 		BasicAWSCredentials creds = new BasicAWSCredentials(DO_SPACES_ACCESS_KEY, DO_SPACES_ACCESS_SECRET);
-		return AmazonS3ClientBuilder.standard()
+		return AmazonS3ClientBuilder
+				.standard()
 				.withEndpointConfiguration(new EndpointConfiguration(DO_SPACES_ENDPOINT, DO_SPACES_REGION))
 				.withCredentials(new AWSStaticCredentialsProvider(creds)).build();
 	}

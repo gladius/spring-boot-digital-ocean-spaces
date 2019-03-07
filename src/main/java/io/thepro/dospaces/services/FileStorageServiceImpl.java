@@ -15,7 +15,7 @@ import com.amazonaws.services.s3.model.PutObjectRequest;
 
 public class FileStorageServiceImpl implements FileStorageService {
 
-	String S3_BUCKET_NAME = "thepro";
+	String S3_BUCKET_NAME = "bucket_name";
 
 	String FOLDER = "files/";
 
