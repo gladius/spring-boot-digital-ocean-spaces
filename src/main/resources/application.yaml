@@ -1,0 +1,7 @@
+digitalocean:
+  spaces:
+    access:
+      key: ${DO_SPACE_KEY}
+      secret: ${DO_SPACE_SECRET}
+      endpoint: ${DO_SPACE_ENDPOINT}
+      region: ${DO_SPACE_REGION}
