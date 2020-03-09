@@ -1,7 +1,5 @@
 package io.thepro.dospaces.services;
 
-import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.sql.Timestamp;
 import java.util.Date;

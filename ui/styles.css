@@ -9,6 +9,11 @@ body{
   background-color: #fff;
 }
 
+.image-container{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 .image {
   border: none;
   margin: auto;
