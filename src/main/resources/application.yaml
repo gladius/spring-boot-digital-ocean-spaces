@@ -4,7 +4,7 @@ do:
       key: ${DO_SPACE_KEY}
       secret: ${DO_SPACE_SECRET}
       endpoint: ${DO_SPACE_ENDPOINT}
-      zone: ${DO_SPACE_ZONE}
+      region: ${DO_SPACE_REGION}
       bucket: ${DO_SPACE_BUCKET}
       
       

@@ -22,14 +22,14 @@ public class DoConfig {
 	@Value("${do.space.endpoint}")
 	private String doSpaceEndpoint;
 
-	@Value("${do.space.zone}")
-	private String doSpaceZone;
+	@Value("${do.space.region}")
+	private String doSpaceRegion;
 
 	@Bean
 	public AmazonS3 getCredentials() {
 		BasicAWSCredentials creds = new BasicAWSCredentials(doSpaceKey, doSpaceSecret);
 		return AmazonS3ClientBuilder.standard()
-				.withEndpointConfiguration(new EndpointConfiguration(doSpaceEndpoint, doSpaceZone))
+				.withEndpointConfiguration(new EndpointConfiguration(doSpaceEndpoint, doSpaceRegion))
 				.withCredentials(new AWSStaticCredentialsProvider(creds)).build();
 	}
 
