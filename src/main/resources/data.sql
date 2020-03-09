@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS files;
+ 
+CREATE TABLE files (
+  id INT AUTO_INCREMENT  PRIMARY KEY,
+  name VARCHAR(250) NOT NULL,
+  ext VARCHAR(50) NOT NULL,
+  createdtime timestamp NULL
+);

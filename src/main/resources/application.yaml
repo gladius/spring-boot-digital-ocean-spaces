@@ -1,7 +1,24 @@
-digitalocean:
+do:
   spaces:
     access:
       key: ${DO_SPACE_KEY}
       secret: ${DO_SPACE_SECRET}
       endpoint: ${DO_SPACE_ENDPOINT}
-      region: ${DO_SPACE_REGION}
+      zone: ${DO_SPACE_ZONE}
+      bucket: ${DO_SPACE_BUCKET}
+      
+      
+     
+spring:
+  datasource:
+    url: jdbc:h2:file:${PATH_TO_DB_FILE};DB_CLOSE_ON_EXIT=FALSE
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+  h2:
+    console:
+      enabled: true

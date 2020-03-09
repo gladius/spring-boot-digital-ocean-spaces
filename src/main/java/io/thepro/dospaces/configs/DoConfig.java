@@ -11,26 +11,25 @@ import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.AmazonS3ClientBuilder;
 
 @Configuration
-public class DigitalOceanConfig {
+public class DoConfig {
 
-	@Value("${digitalocean.spaces.access.key}")
-	private String DO_SPACES_ACCESS_KEY;
+	@Value("${do.space.key}")
+	private String doSpaceKey;
 
-	@Value("${digitalocean.spaces.access.secret}")
-	private String DO_SPACES_ACCESS_SECRET;
+	@Value("${do.space.secret}")
+	private String doSpaceSecret;
 
-	@Value("${digitalocean.spaces.endpoint}")
-	private String DO_SPACES_ENDPOINT;
+	@Value("${do.space.endpoint}")
+	private String doSpaceEndpoint;
 
-	@Value("${digitalocean.spaces.region}")
-	private String DO_SPACES_REGION;
+	@Value("${do.space.zone}")
+	private String doSpaceZone;
 
 	@Bean
 	public AmazonS3 getCredentials() {
-		BasicAWSCredentials creds = new BasicAWSCredentials(DO_SPACES_ACCESS_KEY, DO_SPACES_ACCESS_SECRET);
-		return AmazonS3ClientBuilder
-				.standard()
-				.withEndpointConfiguration(new EndpointConfiguration(DO_SPACES_ENDPOINT, DO_SPACES_REGION))
+		BasicAWSCredentials creds = new BasicAWSCredentials(doSpaceKey, doSpaceSecret);
+		return AmazonS3ClientBuilder.standard()
+				.withEndpointConfiguration(new EndpointConfiguration(doSpaceEndpoint, doSpaceZone))
 				.withCredentials(new AWSStaticCredentialsProvider(creds)).build();
 	}
 
