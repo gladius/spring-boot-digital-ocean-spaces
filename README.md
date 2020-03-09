@@ -1,9 +1,10 @@
 # Spring Boot AWS S3 / Digital Ocean Object Spaces 
 
-### Protected API
+### Demo UI
 
 ![Image of demo UI](https://raw.githubusercontent.com/gladius-thayalarajan/spring-boot-digital-ocean-spaces/master/screenshots/demo.gif)
 
+### Digital Ocean Spaces Dashboard
 
 ![Image of DO spaces dashboard](https://raw.githubusercontent.com/gladius-thayalarajan/spring-boot-digital-ocean-spaces/master/screenshots/do-spaces-dashboard.png)
 ## Author
