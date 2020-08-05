@@ -21,7 +21,7 @@ Read the full post at
 👤 **Gladius Thayalarajan**
 
 - Website: thepro.io/@/gladius
-- Github: [@gladius-thayalarajan](https://github.com/gladius)
+- Github: [@gladius](https://github.com/gladius)
 
 ## Show your support
 
