@@ -6,11 +6,13 @@ This **Spring Boot Starter** is perfect for implementing file/image management f
 
 Read the full post at
 
-[![Open with ThePro](https://thepro.io/button.svg)](https://thepro.io/post/spring-boot-with-aws-s3---digitalocean-spaces-for-file-storage-Xx)
+[![Open with ThePro](https://thepro.io/button.svg)](https://thepro.io/post/spring-boot-and-digitalocean-spaces-for-file-storage-Q1)
 
 ### Demo UI
 
-![Image of demo UI](https://raw.githubusercontent.com/gladius-thayalarajan/spring-boot-digital-ocean-spaces/master/screenshots/demo.gif)
+![Image of demo UI Gif](https://raw.githubusercontent.com/gladius-thayalarajan/spring-boot-digital-ocean-spaces/master/screenshots/demo.gif)
+
+![Image of demo UI Png](https://raw.githubusercontent.com/gladius-thayalarajan/spring-boot-digital-ocean-spaces/master/screenshots/gallery.png)
 
 ### Digital Ocean Spaces Dashboard
 
@@ -20,8 +22,8 @@ Read the full post at
 
 👤 **Gladius Thayalarajan**
 
-- Website: thepro.io/@/gladius
-- Github: [@gladius](https://github.com/gladius)
+- Website: [thepro.io/@/gladius](thepro.io/@/gladius)
+- Github: [github.com/gladius](https://github.com/gladius)
 
 ## Show your support
 
