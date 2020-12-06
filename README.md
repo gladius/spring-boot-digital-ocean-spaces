@@ -22,7 +22,7 @@ Read the full post at
 
 👤 **Gladius Thayalarajan**
 
-- Website: [thepro.io/@/gladius](thepro.io/@/gladius)
+- Website: [thepro.io/@/gladius](https://thepro.io/@/gladius)
 - Github: [github.com/gladius](https://github.com/gladius)
 
 ## Show your support
