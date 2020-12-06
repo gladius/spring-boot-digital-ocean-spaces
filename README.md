@@ -10,13 +10,13 @@ Read the full post at
 
 ### Demo UI
 
-![Image of demo UI Gif](https://raw.githubusercontent.com/gladius-thayalarajan/spring-boot-digital-ocean-spaces/master/screenshots/demo.gif)
-
 ![Image of demo UI Png](https://raw.githubusercontent.com/gladius-thayalarajan/spring-boot-digital-ocean-spaces/master/screenshots/gallery.png)
 
 ### Digital Ocean Spaces Dashboard
 
 ![Image of DO spaces dashboard](https://raw.githubusercontent.com/gladius-thayalarajan/spring-boot-digital-ocean-spaces/master/screenshots/do-spaces-dashboard.png)
+
+![Image of demo UI Gif](https://raw.githubusercontent.com/gladius-thayalarajan/spring-boot-digital-ocean-spaces/master/screenshots/demo.gif)
 
 ## Author
 
