@@ -26,7 +26,7 @@ public class DoConfig {
 	private String doSpaceRegion;
 
 	@Bean
-	public AmazonS3 getCredentials() {
+	public AmazonS3 getS3() {
 		BasicAWSCredentials creds = new BasicAWSCredentials(doSpaceKey, doSpaceSecret);
 		return AmazonS3ClientBuilder.standard()
 				.withEndpointConfiguration(new EndpointConfiguration(doSpaceEndpoint, doSpaceRegion))

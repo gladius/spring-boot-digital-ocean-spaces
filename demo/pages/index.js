@@ -2,13 +2,12 @@ import Head from "next/head";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-//const CDN_URL = "REPLACE_WITH_YOUR_CDN_URL";
-
-const CDN_URL = "https://zeaque-dev.ams3.digitaloceanspaces.com/files/";
 const Gallery = () => {
   const [loading, setLoading] = useState(true);
   const [images, setImages] = useState([]);
   const [progress, setProgress] = useState(0);
+
+  const SERVER_URL = process.env.NEXT_PUBLIC_SERVER_URL;
 
   useEffect(() => {
     loadImages();
@@ -17,7 +16,7 @@ const Gallery = () => {
   const loadImages = () => {
     setLoading(true);
     axios
-      .get("http://localhost:8080/get/images")
+      .get(`${SERVER_URL}/get/images`)
       .then((response) => {
         setImages(response.data);
         setLoading(false);
@@ -30,7 +29,7 @@ const Gallery = () => {
   const deleteImage = (id) => {
     setLoading(true);
     axios
-      .delete("http://localhost:8080/delete/image/" + id)
+      .delete(`${SERVER_URL}/delete/image/${id}`)
       .then((response) => {
         loadImages();
       })
@@ -44,17 +43,13 @@ const Gallery = () => {
     formData.append("image", image);
     let config = {
       onUploadProgress: (progressEvent) => {
-        console.log(
-          "progress event:: ",
-          Math.round((progressEvent.loaded * 100) / progressEvent.total)
-        );
         setProgress(
           Math.round((progressEvent.loaded * 100) / progressEvent.total)
         );
       },
     };
     axios
-      .put("http://localhost:8080/save/image", formData, config)
+      .put(`${SERVER_URL}/save/image`, formData, config)
       .then((response) => {
         loadImages();
         setProgress(0);
@@ -141,7 +136,7 @@ const Gallery = () => {
                         />
                       </button>
                       <img
-                        src={`${CDN_URL}${image.name}.${image.ext}`}
+                        src={`${process.env.NEXT_PUBLIC_DO_SPACES_URL}/files/${image.name}.${image.ext}`}
                         alt={image.name}
                         className="image"
                       />

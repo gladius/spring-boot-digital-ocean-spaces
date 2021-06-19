@@ -24,16 +24,17 @@ import io.thepro.dospaces.repositories.ImageRepository;
 @Service
 public class ImageStorageServiceImpl implements ImageStorageService {
 
+	@Autowired
+	ImageRepository imageRepo;
+	
+	@Autowired
+	AmazonS3 s3Client;
+	
+	
 	@Value("${do.space.bucket}")
 	private String doSpaceBucket;
 
 	String FOLDER = "files/";
-
-	@Autowired
-	AmazonS3 s3Client;
-
-	@Autowired
-	ImageRepository imageRepo;
 
 	@Override
 	public void saveFile(MultipartFile multipartFile) throws IOException {
